@@ -18,4 +18,8 @@ export class AppComponent {
   onLogout() {
     this.securityService.kcService.logout(window.location.origin);
   }
+
+  account() {
+    window.location.href="http://localhost:8080/realms/ebank-realm/account/#/personal-info";
+  }
 }
